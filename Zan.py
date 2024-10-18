@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-    
 import requests
 import datetime
-import asyncio
-import validator
 import threading
 import string
 import random
 import os
 import platform
-from urlibs,parse import urlparse
-import sys import stdout
+import sys 
 from colorama import Fore, Style, init
 import logging
 # Inisialisasi Colorama dan logging
@@ -85,15 +82,15 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}    
-{Fore.YELLOW} 
-{Fore.RED}
-{fore.RED}
-{Fore.YELLOW}
-{fore.YELLOW}
-{Fore.WHITE}
-{Fore.WHITE} 
-{Fore.LIGHTRED_EX} 
+{Fore.YELLOW}      
+{Fore.YELLOW}     mmmmmmmmmmmmmmm            / mmm
+{Fore.RED}        \_________     \          / mm mm 
+{fore.RED}                 mm   /          / mm   mm 
+{Fore.YELLOW}             mm   /  ____    / mm  \  mm  
+{fore.YELLOW}            mm   /  |mmm|   / mm    \  mm 
+{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm 
+{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm 
+{Fore.LIGHTRED_EX}     \________________\           \____
 {Fore.WHITE}  
 {Fore.YELLOW}
 {fore.LIGHTYELLOW_EX}
