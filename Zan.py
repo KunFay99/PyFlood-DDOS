@@ -86,15 +86,15 @@ def display_header():
 f"{Fore.YELLOW}                                           ",
 f"{Fore.YELLOW}      mmmmmmmmmmmmmmm           / mmm     ",
 f"{Fore.RED}        \_________     \          / mm mm    ",
-f"{fore.RED}                 mm   /          / mm   mm    ",
+f"{Fore.RED}                 mm   /          / mm   mm    ",
 f"{Fore.YELLOW}             mm   /  ____    / mm  \  mm   ", 
-f"{fore.YELLOW}            mm   /  |mmm|   / mm    \  mm    ",
+f"{Fore.YELLOW}            mm   /  |mmm|   / mm    \  mm    ",
 f"{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm   ",
 f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    "
 f"{Fore.LIGHTRED_EX}     \________________\           \____    "
 f"{Fore.WHITE}                                                 ",
 f"{Fore.YELLOW}                                               ",
-f"{fore.LIGHTYELLOW_EX}                                         ",
+f"{Fore.LIGHTYELLOW_EX}                                         ",
 ]
 print(banner)
 host = ""
