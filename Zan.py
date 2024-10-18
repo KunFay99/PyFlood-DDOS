@@ -85,16 +85,16 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}      / :::::::        / ::         / ::   / ::::::::::::  
-{Fore.YELLOW}      | ::  | ::      / :: ::       | ::   |____  ::     
-{Fore.RED}      | :::::::      / :: \ ::      | ::        | ::           
-{Fore.YELLOW}      | ::  | ::    / :::::::::     | ::        | ::               
-{Fore.WHITE}      | :::::::    / ::_____\ ::    | ::        | ::       
-{Fore.WHITE}      |________/  /____      \____  \___        \____       
+{Fore.YELLOW}     / :::::::        / ::        / :::::::::  | ::::::::
+{Fore.YELLOW}     | ::__| ::      / :: ::      | ::______/  | ::____/
+{Fore.RED}     | :::::::      / :: \ ::     | :::::::::  | :::::::     
+{Fore.YELLOW}     | ::__| ::    / :::::::::     \_____  ::  | ::_____
+{Fore.WHITE}     | :::::::    / ::_____\ ::   | :::;;;;;;  | ::::::::
+{Fore.WHITE}     |________/  /____      \____  \________/   \_________
  
 {Fore.RED}====================================================================
-{Fore.LIGHTRED_EX}[[   BLACK ARMY INDEPENDEN  TEAM ==> internal script By: ZA          ]]                                                   
-{Fore.WHITE}================================================================= {Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
+{Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA          ]]                                                   
+{Fore.WHITE}================================================================= {Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 
 print(banner)
 host = ""
