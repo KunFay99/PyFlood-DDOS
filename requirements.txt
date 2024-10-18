@@ -1,7 +1,5 @@
 requests
 datetime
 randomstring
-platform
-sys
 colorama
 logging
