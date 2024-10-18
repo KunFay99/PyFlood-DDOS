@@ -11,8 +11,6 @@ from colorama import Fore, Style, init
 import logging
 # Inisialisasi Colorama dan logging
 
-# DEF & CLASS
-
 def clear_text():
     if platform.system().upper() == "WINDOWS":
         os.system('cls')
@@ -83,17 +81,20 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 # Fungsi untuk Menampilkan Header Zan dengan warna
 def display_header():
     header_lines =[
-f"{Fore.YELLOW}                                           ",
-f"{Fore.YELLOW}      mmmmmmmmmmmmmmm           / mmm     ",
-f"{Fore.RED}        \_________     \          / mm mm    ",
-f"{Fore.RED}                 mm   /          / mm   mm    ",
-f"{Fore.YELLOW}             mm   /  ____    / mm  \  mm   ", 
-f"{Fore.YELLOW}            mm   /  |mmm|   / mm    \  mm    ",
-f"{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm   ",
-f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    "      
-f"{Fore.WHITE}                                                 ",
-f"{Fore.YELLOW}                                               ",        
+f"{Fore.YELLOW}                                        ",  
+f"{Fore.YELLOW}      mmmmmmmmmmmmmmm           / mmm    ", 
+f"{Fore.RED}        \_________     \          / mm mm   ",
+f"{Fore.RED}                 mm   /          / mm   mm   ",
+f"{Fore.YELLOW}             mm   /  ____    / mm  \  mm  ",
+f"{Fore.YELLOW}            mm   /  |mmm|   / mm    \  mm   ",
+f"{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm  ",  
+f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    ",
+f"{Fore.WHITE}                                                ",
+f"{Fore.YELLOW}                                                ",      
 ]
+# Tampilkan header dengan warna
+for line in header_lines:
+    print(line)
 host = ""
 ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
@@ -120,6 +121,5 @@ for loader_num in range(create_thread):
     threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
     threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 clear_text()
-print(banner)
 status_code = True
 print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
