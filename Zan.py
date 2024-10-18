@@ -85,16 +85,16 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}   ::::::::::\          / :::     | :::  / ::
-{Fore.YELLOW}   \______:: /         / ::.::    | :: ::| ::
-{Fore.RED}        :: /         / :: \ ::   | ::\ :: ::
-{Fore.YELLOW}        :: /         / :::::::::  | :: \ :;::
-{Fore.WHITE}      ::::::::::   / ::     \ :: | ::  \ :::
-{Fore.WHITE}       \_________\ \___      \__  \__   \___
+{Fore.YELLOW}   / :::::::  / ::           / ::      / ::::::/ :: / ::
+{Fore.YELLOW}   | ::  | :: | ::          / :: ::   | ::____/| :: ::
+{Fore.RED}      | :::::::  | ::         / :: \ ::  | ::     | :::
+{Fore.YELLOW}   | ::  | :: | ::        / ::::::::: | ::     | :: ::
+{Fore.WHITE}    | :::::::  | :::::::  / ::_____\ ::|  ::::::| :: | ::    
+{Fore.WHITE}    |_______/   \_______\/___       \___\_______\___  \___
  
-{Fore.RED}          =============================================
-{Fore.LIGHTRED_EX}          [[                                             ]]    
-{Fore.WHITE}          ||=============================================                       {Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
+{Fore.RED}=========================================================
+{Fore.LIGHTRED_EX}[[  INDEPENDEN  TEAM ==> internal script By: ZA                                          ]]    
+{Fore.WHITE}======================================================{Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 
 print(banner)
 host = ""
@@ -106,9 +106,9 @@ spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 200)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
 booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=300)>"))
 
-print(f"{Fore.LIGHTCYAN_EX}       EXAMPLE HTTP METHODS> CONNECT GET POST HEAD DELETE OPTIONS TRACE")
+print(f"{Fore.LIGHTCYAN_EX}       EXAMPLE HTTP METHODS> GET POST HEAD ")
 
-print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
+print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE PYFLOODER GATEWAY")
 
 methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
 
@@ -129,4 +129,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT >>>>>>>>>>>>{Fore.RESET} SUKSES !!!"))         
+print(f"{Fore.GREEN}TRYING SENT ..... SUCCESSFUL DELIVERY...!!{Fore.RESET}")        
