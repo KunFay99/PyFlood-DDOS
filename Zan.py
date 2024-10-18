@@ -93,7 +93,7 @@ banner = f"""
 {Fore.WHITE}      |________/  /____      \____  \___        \____    "      
  
 {Fore.RED}====================================================================
-{Fore.LIGHTRED_EX}[[   BLACK ARMY INDEPENDEN  TEAM ==> internal script By: ZA                                                ]]    
+{Fore.LIGHTRED_EX}[[   BLACK ARMY INDEPENDEN  TEAM ==> internal script By: ZA          ]]                                                   
 {Fore.WHITE}================================================================= {Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 
 print(banner)
