@@ -93,7 +93,6 @@ f"{Fore.WHITE}                                                ",
 f"{Fore.YELLOW}                                                ",      
 ]
 # Tampilkan header dengan warna
-for line in header_lines:
     print(line)
 host = ""
 ip = ""
