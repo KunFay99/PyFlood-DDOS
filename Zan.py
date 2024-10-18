@@ -1,12 +1,13 @@
-import socket
-    import threading
-    import string
-    import random
-    import time
-    import os
-    import platform
-    import sys
-    from colorama import Fore
+# -*- coding: utf-8 -*-         
+import socke
+import threading
+import string
+import random
+import time
+import os
+import platform
+import sys
+from colorama import Fore
 except ModuleNotFoundError as e:
     print(f"{e} CAN'T IMPORT . . . .")
     exit()
