@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-    
 import requests
-import datetime
+import time
 import threading
 import string
 import random
@@ -90,13 +90,10 @@ f"{Fore.RED}                 mm   /          / mm   mm    ",
 f"{Fore.YELLOW}             mm   /  ____    / mm  \  mm   ", 
 f"{Fore.YELLOW}            mm   /  |mmm|   / mm    \  mm    ",
 f"{Fore.WHITE}            mm   /          / mmmmmmmmmmmmm   ",
-f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    "
-f"{Fore.LIGHTRED_EX}     \________________\           \____    "
+f"{Fore.WHITE}           mm    mmmmmmmmmm/ mm ———————\  mm    "      
 f"{Fore.WHITE}                                                 ",
-f"{Fore.YELLOW}                                               ",
-f"{Fore.LIGHTYELLOW_EX}                                         ",
+f"{Fore.YELLOW}                                               ",        
 ]
-print(banner)
 host = ""
 ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
