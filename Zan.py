@@ -1,16 +1,18 @@
-# -*- coding: utf-8 -*-         
-import socke
+# -*- coding: utf-8 -*-    
+import requests
+import datetime
+import asyncio
+import validator
 import threading
 import string
 import random
-import time
 import os
 import platform
-import sys
-from colorama import Fore
-except ModuleNotFoundError as e:
-    print(f"{e} CAN'T IMPORT . . . .")
-    exit()
+from urlibs,parse import urlparse
+import sys import stdout
+from colorama import Fore, Style, init
+import logging
+# Inisialisasi Colorama dan logging
 
 # DEF & CLASS
 
