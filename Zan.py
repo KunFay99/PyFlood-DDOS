@@ -125,4 +125,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . .system('iptables -D OUTPUT -d %s -p tcp --dport %d --tcp-flags RST RST -j DROP' %( target_ip, port {Fore.RESET}  "))         
+print(f"{Fore.GREEN}TRYING SENT >>>>>>>>>>>>{Fore.RESET} SUKSES !!!"))         
