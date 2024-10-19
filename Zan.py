@@ -92,9 +92,9 @@ banner = f"""
 {Fore.WHITE}      | :::::::    / ::_____\ ::   | :::;;;;;;  | ::::::::
 {Fore.WHITE}      |________/  /____      \____  \________/   \_________
  
-{Fore.RED}==================================================================
-{Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA        ]]                                                   
-{Fore.WHITE}================================================================= {Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
+{Fore.RED}====================================================================
+{Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA       ]]                                                   
+{Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 
 print(banner)
 host = ""
