@@ -85,15 +85,15 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}     / :::::::        / ::        / :::::::::  | ::::::::
-{Fore.YELLOW}     | ::__| ::      / :: ::      | ::______/  | ::____/
-{Fore.RED}     | :::::::      / :: \ ::     | :::::::::  | :::::::     
-{Fore.YELLOW}     | ::__| ::    / :::::::::     \_____  ::  | ::_____
-{Fore.WHITE}     | :::::::    / ::_____\ ::   | :::;;;;;;  | ::::::::
-{Fore.WHITE}     |________/  /____      \____  \________/   \_________
+{Fore.YELLOW}      / :::::::        / ::        / :::::::::  | ::::::::
+{Fore.YELLOW}      | ::__| ::      / :: ::      | ::______/  | ::____/
+{Fore.RED}      | :::::::      / :: \ ::     | :::::::::  | :::::::     
+{Fore.YELLOW}      | ::__| ::    / :::::::::     \_____  ::  | ::_____
+{Fore.WHITE}      | :::::::    / ::_____\ ::   | :::;;;;;;  | ::::::::
+{Fore.WHITE}      |________/  /____      \____  \________/   \_________
  
-{Fore.RED}====================================================================
-{Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA          ]]                                                   
+{Fore.RED}==================================================================
+{Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA        ]]                                                   
 {Fore.WHITE}================================================================= {Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 
 print(banner)
@@ -125,4 +125,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . .PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!! 😁😁😁{Fore.RESET}")
+print(f"{Fore.GREEN}TRYING SENT . . .PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!! 🤣{Fore.RESET}")
