@@ -106,12 +106,7 @@ spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 200)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
 booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=300)>"))
 
-print(f"{Fore.LIGHTCYAN_EX}HTTP METHODS> GET POST HEAD ")
-
-print(f"{Fore.CYAN}CUSTOM HTTP METHODS> SERVER CLOUDFLARE PYFLOODER GATEWAY")
-
-methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
-
+print(f"{Fore.LIGHTCYAN_EX} pilih methhods> GET POST HEAD ")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
