@@ -102,9 +102,9 @@ ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
 port_loader = int(input(f"{Fore.YELLOW}PORT>"))
 time_loader = time.time() + int(input(f"{Fore.LIGHTRED_EX}TIME (DEFAULT=250)>"))
-spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 299)>"))
+spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 200)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
-booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500)>"))
+booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=300)>"))
 print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
 print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
 methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
@@ -125,4 +125,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . .{Fore.RESET}")
+print(f"{Fore.GREEN}TRYING SENT . . .MISI SUKSES PAKET TERKIRIM DENGAN MANIS..😁{Fore.RESET}")
