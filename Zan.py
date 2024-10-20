@@ -85,12 +85,12 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}      / :::::::        / ::        / :::::::::  | ::::::::
-{Fore.YELLOW}      | ::__| ::      / :: ::      | ::______/  | ::____/
-{Fore.RED}      | :::::::      / :: \ ::     | :::::::::  | :::::::     
-{Fore.YELLOW}      | ::__| ::    / :::::::::     \_____  ::  | ::_____
-{Fore.WHITE}      | :::::::    / ::_____\ ::   | :::;;;;;;  | ::::::::
-{Fore.WHITE}      |________/  /____      \____  \________/   \_________
+{Fore.YELLOW}   | :: | ::   | ::  | ::  | :::  | ::            | ::::::::
+{Fore.YELLOW}   | :: ::     | ::  | ::  | :::: | ::            | ::————/
+{Fore.RED}      | :::       | ::  | ::  | ::  :: ::            | :::::::
+{Fore.YELLOW}   | :: ::     | ::  | ::  | :: \ :::;            | ::———
+{Fore.WHITE}    | :: | ::   |  ::::::   | ::  \ :::  :::::::   | ::
+{Fore.WHITE}    \___  \___   \_______/  \___   \___   \______  |___
  
 {Fore.RED}====================================================================
 {Fore.LIGHTRED_EX}[[ BRIGADE ATTACKER SNIPER ELITE  ==> internal script By: ZA       ]]                                                   
