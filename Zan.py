@@ -125,4 +125,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . .PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!! 🤣{Fore.RESET}")
+print(f"{Fore.GREEN}TRYING SENT . . . . .PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!! 🤣 ❌ ❌{Fore.RESET}")
