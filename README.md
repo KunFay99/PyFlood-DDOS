@@ -7,4 +7,4 @@
 
   - python3 setup.py
 
-  - python3 Zan.py
+  - PyFlood-DDOS.py
