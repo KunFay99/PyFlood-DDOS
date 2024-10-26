@@ -1,7 +1,7 @@
 # Zan
 # Cloning Repository 
 
-  - git clone https://github.com/KunFay99/Zan.git
+  - git clone https://github.com/KunFay99/PyFlood-DDOS.git
 
   - pip install -r requirements.txt
 
