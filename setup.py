@@ -10,6 +10,7 @@ if c == "0":
     os.system("pip install colorama")
     os.system("pip install undetected_chromedriver")
     os.system("pip install httpx")
+    os.system("git pull")
 
 elif c == "1":
     os.system("pip3 install cloudscraper")
@@ -18,5 +19,6 @@ elif c == "1":
     os.system("pip3 install colorama")
     os.system("pip3 install undetected_chromedriver")
     os.system("pip3 install httpx")
+    os.system("git pull")
 
 print("Done.")
