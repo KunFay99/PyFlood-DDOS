@@ -1,7 +1,5 @@
 requests
-date
-time
-randoms
-tring
+datetime
+randomstring
 colorama
 logging
