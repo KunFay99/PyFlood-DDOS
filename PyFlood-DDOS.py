@@ -87,8 +87,8 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 banner = f"""
 {Fore.YELLOW}    ® © © ©   ©         ©  ® ® ® ® ® ®          ® ®       ® ®    ® ® ® 
 {Fore.YELLOW}    ©       ©   ©     ©    ®         ®        ®     ®   ®     ®  ®     ®
-{Fore.RED}       ©       ©     © ©      ® ® ® ®   ®       ®       ® ®       ® ®      ®
-{Fore.RED}       © © © ©        ©       ®         ®       ®       ® ®       ® ®      ®
+{Fore.RED}    ©       ©     © ©      ® ® ® ®   ®       ®       ® ®       ® ®      ®
+{Fore.RED}    © © © ©        ©       ®         ®       ®       ® ®       ® ®      ®
 {Fore.WHITE}     ©              ©       ®         ®        ®     ®   ©     ©  ®     ®
 {Fore.WHITE}     ©              ©       ®         ® ® ® ® ®  ® ®       ® ®    ® ® ® 
 {Fore.WHITE}                 
