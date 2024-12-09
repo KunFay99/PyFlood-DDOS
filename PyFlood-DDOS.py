@@ -111,10 +111,12 @@ banner = f"""
 {Fore.CYAN}▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
 {Fore.CYAN}▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
 {Fore.RED}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{Fore.WHITE}┣            BRIGADE ATTACKERS ZNEEPER ELITE
-{Fore.GREEN}┣                     INTERNAL SCRIFT
-{Fore.YELLOW}┣                       BY: KF'24
-{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
+{Fore.RED}┣{Fore.WHITE}            BRIGADE ATTACKERS ZNEEPER ELITE
+{Fore.RED}┣{Fore.GREEN}                     INTERNAL SCRIFT
+{Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
+{Fore.RED}┣ 
+{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}"""
 print(banner)
 host = ""
 ip = ""
@@ -122,8 +124,8 @@ target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
 port_loader = int(input(f"{Fore.YELLOW}PORT>"))
 time_loader = time.time() + int(input(f"{Fore.BLUE}TIME (DEFAULT=250)>"))
 spam_loader = int(input(f"{Fore.YELLOW}SPAM THREAD (DEFAULT=50 OR 200)>"))
-create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
-booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500)>"))
+create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=35)>"))
+booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=400)>"))
 print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
 print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GET or POST")
 methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=G)>")
