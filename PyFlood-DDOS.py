@@ -117,15 +117,15 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.BLUE}██ ██ ██▒▒
-{Fore.BLIE}██▒▒    ██▒▒
-{Fore.BLUE}██▒▒    ██▒▒
-{Fore.BLUE}██▒▒    ██▒▒
-{Fore.CYAN}██▒██ ██▒▒
-{Fore.CYAN}██▒▒▒▒▒
-{Fore.CYAN}██▒▒▒▒
-{fore.CYAN}▒▒▒▒
-{fore.CYAN}▒▒
+{Fore.BLUE}███████▒▒  ██▒▒      ██▒▒
+{Fore.BLIE}██▒▒   ██▒▒ ██▒▒    ██▒▒
+{Fore.BLUE}██▒▒   ██▒▒  ██▒▒  ██▒▒
+{Fore.BLUE}██▒▒   ██▒▒   ██▒▒██▒▒
+{Fore.CYAN}███████▒▒       ██▒▒
+{Fore.CYAN}██▒▒             ██▒▒
+{Fore.CYAN}██▒▒             ██▒▒
+{fore.CYAN} ▒▒▒              ▒▒▒
+{fore.CYAN}  ▒                ▒
 {Fore.RED}===============================================================================
 {Fore.LIGHTRED_EX}[[   ==> internal script By: ZA                  ]]                                                   
 {Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
