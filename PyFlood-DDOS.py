@@ -124,8 +124,8 @@ banner = f"""
 {Fore.CYAN}███████▒▒       ██▒▒
 {Fore.CYAN}██▒▒             ██▒▒
 {Fore.CYAN}██▒▒             ██▒▒
-{fore.CYAN} ▒▒▒              ▒▒▒
-{fore.CYAN}  ▒                ▒
+{Fore.CYAN} ▒▒▒              ▒▒▒
+{Fore.CYAN}  ▒                ▒
 {Fore.RED}===============================================================================
 {Fore.LIGHTRED_EX}[[   ==> internal script By: ZA                  ]]                                                   
 {Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
