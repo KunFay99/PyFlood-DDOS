@@ -125,7 +125,16 @@ status_help_type = 0
 def command():
     global status_help_type,status_code,prefix_get,username,password,GUI_SETUP
     if status_help_type == 0:
-        print(f"{Fore.LIGHTYELLOW_EX}         __..---..__\n{Fore.YELLOW}     ,-='  {Fore.RED}/  |  \{Fore.YELLOW}  `=-.\n{Fore.LIGHTWHITE_EX}    :--..___________..--;\n{Fore.WHITE}     \.,_____________,./ \n{Fore.RED}   ╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗┌─┐┬┌─┐\n{Fore.LIGHTRED_EX}   ╚═╗║ ║║  ╠╩╗║╣  ║ ├─┘│├┤ \n{Fore.WHITE}   ╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩o┴  ┴└─┘\n {Fore.WHITE}[{Fore.GREEN}+{Fore.WHITE}] {Fore.WHITE}< {Fore.LIGHTGREEN_EX}TYPE {prefix_get}HELP FOR SHOW COMMAND {Fore.WHITE}> {Fore.RESET}")
+        print(f"{Fore.LIGHTYELLOW_EX}         __..---..__\n
+        {Fore.YELLOW}     ,-='  
+        {Fore.RED}/  |  \
+        {Fore.YELLOW}  `=-.\n
+        {Fore.LIGHTWHITE_EX}    :--..___________..--;\n
+        {Fore.WHITE}     \.,_____________,./ \n
+        {Fore.RED}   ╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗┌─┐┬┌─┐\n
+        {Fore.LIGHTRED_EX}   ╚═╗║ ║║  ╠╩╗║╣  ║ ├─┘│├┤ \n
+        {Fore.WHITE}   ╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩o┴  ┴└─┘\n 
+        {Fore.WHITE}[{Fore.GREEN}+{Fore.WHITE}] {Fore.WHITE}< {Fore.LIGHTGREEN_EX}TYPE {prefix_get}HELP FOR SHOW COMMAND {Fore.WHITE}> {Fore.RESET}")
         status_help_type += 1
     else:
         pass
@@ -133,9 +142,26 @@ def command():
     data_input_loader = input(f"{Fore.CYAN}{username}{Fore.WHITE}@{Fore.BLUE}{password} {Fore.WHITE}${Fore.RESET}")
     args_get = data_input_loader.split(" ")
     if args_get[0].upper() == f"{prefix_get}CREDIT":
-        print(f"{Fore.YELLOW}         __..---..__\n{Fore.YELLOW}     ,-='  {Fore.RED}/  |  \{Fore.YELLOW}  `=-.\n{Fore.LIGHTWHITE_EX}    :--..___________..--;\n{Fore.WHITE}     \.,_____________,./ \n{Fore.LIGHTYELLOW_EX}   ╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗{Fore.RED}┌─┐┬┌─┐\n{Fore.YELLOW}   ╚═╗║ ║║  ╠╩╗║╣  ║{Fore.LIGHTRED_EX} ├─┘│├┤ \n{Fore.LIGHTRED_EX}   ╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩{Fore.WHITE}o{Fore.LIGHTYELLOW_EX}┴  ┴└─┘\n\n{Fore.LIGHTMAGENTA_EX}CREDIT {Fore.WHITE}- {Fore.LIGHTBLUE_EX}ART {Fore.WHITE}: {Fore.CYAN}Riitta Rasimus {Fore.WHITE}- {Fore.LIGHTCYAN_EX}ascii.co.uk/art/pie {Fore.WHITE}|{Fore.GREEN} DEV {Fore.WHITE}- {Fore.LIGHTGREEN_EX}github.com/Hex1629{Fore.RESET}")
+        print(f"{Fore.YELLOW}         __..---..__\n
+        {Fore.YELLOW}     ,-='  
+        {Fore.RED}/  |  \
+        {Fore.YELLOW}  `=-.\n
+        {Fore.LIGHTWHITE_EX}    :--..___________..--;\n
+        {Fore.WHITE}     \.,_____________,./ \n
+        {Fore.LIGHTYELLOW_EX}   ╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗
+        {Fore.RED}┌─┐┬┌─┐\n
+        {Fore.YELLOW}   ╚═╗║ ║║  ╠╩╗║╣  ║
+        {Fore.LIGHTRED_EX} ├─┘│├┤ \n
+        {Fore.LIGHTRED_EX}   ╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩
+        {Fore.WHITE}o{Fore.LIGHTYELLOW_EX}┴  ┴└─┘\n\n
+        {Fore.LIGHTMAGENTA_EX}CREDIT 
+        {Fore.WHITE}- {Fore.LIGHTBLUE_EX}ART {Fore.WHITE}: {Fore.CYAN}Riitta Rasimus {Fore.WHITE}- {Fore.LIGHTCYAN_EX}ascii.co.uk/art/pie {Fore.WHITE}|{Fore.GREEN} DEV {Fore.WHITE}- {Fore.LIGHTGREEN_EX}github.com/Hex1629{Fore.RESET}")
     elif args_get[0].upper() == f"{prefix_get}HELP":
-        print(f"{Fore.GREEN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━┓\n┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━┫\n{Fore.LIGHTGREEN_EX}┃ HELP COMMAND . menu                                ┃\n{Fore.GREEN}┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n   {Fore.RED}{prefix_get}HELP         {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For show command\n   {Fore.RED}{prefix_get}CREDIT       {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For show credit\n   {Fore.RED}{prefix_get}CLS          {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For clear all screen\n   {Fore.RED}{prefix_get}MENU         {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For return to menu\n   {Fore.RED}{prefix_get}GUI_SET      {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For change gui attack\n   {Fore.RED}{prefix_get}PREFIX_SET   {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For set prefix\n   {Fore.RED}{prefix_get}FLOOD        {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For attack target with http flood\n   {Fore.RED}{prefix_get}PING_URL     {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For ping test with url\n   {Fore.RED}{prefix_get}PING_TCP     {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For ping test with tcp\n   {Fore.RED}{prefix_get}EXIT         {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For exit from panel\n{Fore.GREEN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛{Fore.RESET}")
+        print(f"{Fore.GREEN}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━┓\n┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━┫\n
+        {Fore.LIGHTGREEN_EX}┃ HELP COMMAND . menu                                ┃\n
+        {Fore.GREEN}┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\n   
+        {Fore.RED}{prefix_get}HELP         {Fore.LIGHTGREEN_EX}┃ 
+        {Fore.YELLOW}For show command\n   {Fore.RED}{prefix_get}CREDIT       {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For show credit\n   {Fore.RED}{prefix_get}CLS          {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For clear all screen\n   {Fore.RED}{prefix_get}MENU         {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For return to menu\n   {Fore.RED}{prefix_get}GUI_SET      {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For change gui attack\n   {Fore.RED}{prefix_get}PREFIX_SET   {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For set prefix\n   {Fore.RED}{prefix_get}FLOOD        {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For attack target with http flood\n   {Fore.RED}{prefix_get}PING_URL     {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For ping test with url\n   {Fore.RED}{prefix_get}PING_TCP     {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For ping test with tcp\n   {Fore.RED}{prefix_get}EXIT         {Fore.LIGHTGREEN_EX}┃ {Fore.YELLOW}For exit from panel\n{Fore.GREEN}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛{Fore.RESET}")
     elif args_get[0].upper() == f"{prefix_get}PREFIX_SET":
         if len(args_get) == 2:
             prefix_get = args_get[1]
@@ -242,31 +268,10 @@ def command():
              status_code = True
              if GUI_SETUP == 0:
                 clear_text()
-                print(f"{Fore.LIGHTCYAN_EX}Sending Packet {Fore.CYAN}HTTP FLOOD {Fore.LIGHTCYAN_EX}To Target {Fore.WHITE}!\n\n{Fore.YELLOW}    ━╦━━━━━━━━━━━━━━━━━━━━━╦━\n{Fore.LIGHTYELLOW_EX}{Fore.WHITE}       ━ ━ ━ {Fore.LIGHTGREEN_EX}SENDING {Fore.WHITE}
-                {Fore.LIGHTRED_EX}  
-                {Fore.GREEN}Target: {target_loader}     
-                {Fore.GREEN}Port: {port_loader}    
-                {Fore.GREEN}Type: {data_type_loader_packet}
-                {Fore.RED}      
-                {Fore.BLUE}@DEV 
-                {Fore.WHITE}- 
-                print{f"Fore.LIGHTBLUE_EX}Hex1629{Fore.RESET}")
+                print(f"{Fore.LIGHTCYAN_EX}Sending Packet {Fore.CYAN}HTTP FLOOD {Fore.LIGHTCYAN_EX}To Target {Fore.WHITE}!\n\n{Fore.YELLOW}    ━╦━━━━━━━━━━━━━━━━━━━━━╦━\n{Fore.LIGHTYELLOW_EX}╚═══╦╩═════════════════════╩╦═══╝\n{Fore.WHITE}       ━ ━ ━ {Fore.LIGHTGREEN_EX}SENDING {Fore.WHITE}━ ━ ━  \n{Fore.LIGHTRED_EX}  ╔═╩═══════════════════════╩═╗\n     {Fore.GREEN}Target: {target_loader}\n       {Fore.GREEN}Port: {port_loader}\n       {Fore.GREEN}Type: {data_type_loader_packet}\n{Fore.RED}  ╚═══════════════════════════╝\n      {Fore.BLUE}@DEV {Fore.WHITE}- {Fore.LIGHTBLUE_EX}Hex1629{Fore.RESET}")
              elif GUI_SETUP == 3:
                 clear_text()
-                print(f"{Fore.YELLOW}
-                print(f"{Fore.BLUE}DEV
-                print{f"Fore.WHITE}
-                print{f"Fore.CYAN}HEX1629 Fore.LIGHTYELLOW_EX}
-                print{"{Fore.LIGHTRED_EX}{Fore.LIGHTGREEN_EX} TARGET 
-                print{f"Fore.WHITE}━ 
-                print{f"Fore.GREEN}{target_loader}\n   
-                print{f"Fore.LIGHTGREEN_EX} PORT 
-                print{f"Fore.WHITE}─ 
-                print{f"Fore.GREEN}{port_loader}
-                print{f"Fore.LIGHTGREEN_EX}TIME 
-                print{f"Fore.WHITE}
-                print{f"Fore.GREEN}{time_loader}
-                print{f"Fore.RED}{Fore.RESET}")
+                print(f"{Fore.YELLOW}   ╔━━━━━━━━━━━━━━━━━━━━━╗\n        {Fore.BLUE}DEV {Fore.WHITE}━ {Fore.CYAN}HEX1629    \n{Fore.LIGHTYELLOW_EX}   ╚━╦━━━━━━━━━━━━━━━━━╦━╝\n{Fore.LIGHTRED_EX}╦━━━━╩━━━━━━━━━━━━━━━━━╩━━━━╦\n {Fore.LIGHTGREEN_EX} TARGET {Fore.WHITE}━ {Fore.GREEN}{target_loader}\n   {Fore.LIGHTGREEN_EX} PORT {Fore.WHITE}─ {Fore.GREEN}{port_loader}\n    {Fore.LIGHTGREEN_EX}TIME {Fore.WHITE}━ {Fore.GREEN}{time_loader}\n{Fore.RED}╩━━━━━━━━━━━━━━━━━━━━━━━━━━━╩{Fore.RESET}")
              elif GUI_SETUP == 1:
                  print(f"\n{Fore.MAGENTA}[{Fore.WHITE}SOCKET.PIE{Fore.MAGENTA}]{Fore.WHITE} Send {Fore.WHITE}<{Fore.GREEN}{data_type_loader_packet}{Fore.WHITE}> {Fore.WHITE}to {Fore.RED}{ip}:{port_loader}")
              elif GUI_SETUP == 2:
@@ -280,7 +285,7 @@ def command():
 def checker_login():
     global username,password
     clear_text()
-    print(f"{Fore.LIGHTYELLOW_EX} \n{Fore.YELLOW}{Fore.RED}{Fore.YELLOW}  `=-.\n{Fore.LIGHTWHITE_EX}{Fore.WHITE}{Fore.RED} \n{Fore.LIGHTRED_EX} \n{Fore.WHITE}{Fore.RESET}")
+    print(f"{Fore.LIGHTYELLOW_EX}         __..---..__\n{Fore.YELLOW}     ,-='  {Fore.RED}/  |  \{Fore.YELLOW}  `=-.\n{Fore.LIGHTWHITE_EX}    :--..___________..--;\n{Fore.WHITE}     \.,_____________,./ \n{Fore.RED}   ╔═╗╔═╗╔═╗╦╔═╔═╗╔╦╗┌─┐┬┌─┐\n{Fore.LIGHTRED_EX}   ╚═╗║ ║║  ╠╩╗║╣  ║ ├─┘│├┤ \n{Fore.WHITE}   ╚═╝╚═╝╚═╝╩ ╩╚═╝ ╩o┴  ┴└─┘{Fore.RESET}")
     print(f"{Fore.YELLOW}USER - ROOT {Fore.LIGHTYELLOW_EX}PASSWORD - ROOT{Fore.RESET}")
     time.sleep(0.5)
     username = input(f"{Fore.CYAN}USERNAME {Fore.WHITE}${Fore.RESET}")
