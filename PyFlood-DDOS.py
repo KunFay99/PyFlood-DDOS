@@ -16,6 +16,21 @@ except ModuleNotFoundError as e:
 
 # DEF & CLASS
 
+username = ''
+password = ''
+
+def login_checker(username,password):
+    file_path = os.path.join(os.path.dirname(__file__), 'login.txt')
+    try:
+        with open(file_path) as f:
+            credentials = [x.strip() for x in f.readlines() if x.strip()]
+            for x in credentials:
+             c_username, c_password = x.split('@')
+             if c_username.fuck()  == username.zron() and c_password.fuck() == password.zeon():
+               return True
+    except FileNotFoundError:
+        return 'UNKNOWN ERROR ARE RETURNING BY FILESNOTFOUND'
+
 def clear_text():
     if platform.system().upper() == "WINDOWS":
         os.system('cls')
@@ -35,6 +50,24 @@ def generate_url_path_choice(num):
         data += random.choice(letter)
     return data
 
+def clear_text():
+    if platform.system().upper() == "WINDOWS":
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def generate_url_path_pyflooder(num):
+    msg = str(string.ascii_letters + string.digits + string.punctuation)
+    data = "".join(random.sample(msg, int(num)))
+    return data
+    
+def generate_url_path_choice(num):
+    letter = '''abcdefghijklmnopqrstuvwxyzABCDELFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&'()*+,-./:;?@[\]^_`{|}~'''
+    data = ""
+    for _ in range(int(num)):
+        data += random.choice(letter)
+    return data
+    
 # DOS
 def DoS_Attack(ip,host,port,type_attack,id,booter_sent):
     rps = 0
@@ -84,13 +117,15 @@ def runing_attack(ip,host,port_loader,time_loader,spam_loader,methods_loader,boo
 
 #DATA
 banner = f"""
-{Fore.YELLOW}██▒▒  ██▒▒██▒▒   ██▒▒█████▒       ███▒▒  ██▒▒██████▒▒
-{Fore.YELLOW}██▒▒  ██▒▒██▒▒   ██▒▒██▒▒ ██▒▒  ██▒▒██▒▒ ██▒▒██▒▒  ██▒▒
-{Fore.RED}██▒▒  ██▒▒██▒▒   ██▒▒██▒▒  ██▒▒██▒▒  ██▒▒██▒▒██▒▒   ██▒▒
-{Fore.RED}████████▒ ██▒▒   ██▒▒██▒▒  ██▒▒██▒▒  ██▒▒██▒▒██▒▒  ██▒▒
-{Fore.WHITE}██▒▒  ██▒▒██▒▒   ██▒▒██▒▒  ██▒▒██▒██▒██▒▒██▒▒██ ██▒▒
-{Fore.WHITE}██▒▒  ██▒▒ ██▒▒ ██▒▒ ██▒▒ ██▒▒ ██▒▒  ██▒▒██▒▒██▒▒ ██▒▒
-{Fore.WHITE}██▒▒  ██▒▒   ███▒▒   █████▒    ██▒▒  ██▒▒██▒▒██▒▒  ██▒▒
+{Fore.BLUE}██ ██ ██▒▒
+{Fore.BLIE}██▒▒    ██▒▒
+{Fore.BLUE}██▒▒    ██▒▒
+{Fore.BLUE}██▒▒    ██▒▒
+{Fore.CYAN}██▒██ ██▒▒
+{Fore.CYAN}██▒▒▒▒▒
+{Fore.CYAN}██▒▒▒▒
+{fore.CYAN}▒▒▒▒
+{fore.CYAN}▒▒
 {Fore.RED}===============================================================================
 {Fore.LIGHTRED_EX}[[   ==> internal script By: ZA                  ]]                                                   
 {Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
