@@ -110,10 +110,11 @@ banner = f"""
 {Fore.CYAN}██▒▒       ████████▒▒ ████▒▒     ████▒▒   ██████▒▒
 {Fore.CYAN}▒▒▒        ▒▒ ▒▒ ▒▒   ▒▒ ▒▒      ▒ ▒▒     ▒▒▒▒▒
 {Fore.CYAN}▒▒          ▒ ▒ ▒      ▒ ▒        ▒▒        ▒▒
-{Fore.RED}===============================================================================
-{Fore.LIGHTRED_EX}[[   ==> internal script By: ZA                  ]]                                                   
-{Fore.WHITE}================================================================={Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
-
+{Fore.RED}┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{Fore.WHITE}┣            BRIGADE ATTACKERS ZNEEPER ELITE
+{Fore.GREEN}┣                     INTERNAL SCRIFT
+{Fore.YELLOW}┣                       BY: KF'24
+{Fore.RED} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Fore.YELLOW}#{Fore.LIGHTYELLOW_EX}TOOL #{Fore.RESET}"""
 print(banner)
 host = ""
 ip = ""
@@ -125,7 +126,7 @@ create_thread = int(input(F"{Fore.LIGHTGREEN_EX}CREATE THREAD (DEFAULT=50)>"))
 booter_sent = int(input(F"{Fore.GREEN}BOOTER SENT (DEFAULT=500)>"))
 print(f"{Fore.LIGHTCYAN_EX}EXAMPLE HTTP METHODS> CONNECT GET PUT PATCH POST HEAD ")
 print(f"{Fore.CYAN}EXAMPLE CUSTOM HTTP METHODS> SERVER CLOUDFLARE AGE PYFLOODER GET or POST")
-methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=GET or POST)>")
+methods_loader = input(F"{Fore.LIGHTBLUE_EX}HTTP_METHODS (EXAMPLE=G)>")
 print(f"{Fore.MAGENTA}TRYING TO GET IP:PORT {Fore.LIGHTMAGENTA_EX}. . .{Fore.RESET}")
 try:
     host = str(target_loader).replace("https://", "").replace("http://", "").replace("www.", "").replace("/", "")
